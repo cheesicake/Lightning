@@ -1,4 +1,7 @@
-int y = 0;
+int startx = 0;
+int starty = 150;
+int endx = 0;
+int endy = 150;
 void setup()
 {
   size(700,700);
@@ -10,12 +13,13 @@ void draw()
 fill(165, 236, 247);
 
 strokeWeight(5);
-fill(25, 25, 265);
-line(350, y, 350, 35);
-y = y + 10;
-if(y>650){
+stroke(0, 244, 255);
+line(startx, starty, startx, starty);
+startx = startx + 5;
+starty = starty + 10;
+if(starty>650){
   background(52, 7, 13);
-  y = 0;
+  starty = 0;
 }
 //neurons
 strokeWeight(0);
