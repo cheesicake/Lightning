@@ -2,16 +2,16 @@ int startx = 0;
 int starty = 45;
 int endx = 0;
 int endy = 45;
+int x = 0;
 void setup()
 {
   size(700,700);
-  //noLoop();
+  
   background(52, 7, 13);
 }
 void draw()
 {
 fill(165, 236, 247);
-//background(52, 7, 13);
 strokeWeight(5);
 stroke(0, 244, 255);
   endx = startx +((int)(Math.random()*100));
@@ -40,10 +40,20 @@ strokeWeight(0);
 fill(167, 207, 255);
 ellipse(600, 50, 25, 15);
 }
-void mousePressed(int startx, int starty, int endx, int endy)
+void mousePressed()
 {
-startx = 101;
-  starty = 185;
-  endx = 101;
-  endy = 185;
+  background(52, 7, 13);
+ if(x == 0){
+   x = 77;
+   startx = 0;
+   starty = 45;
+   endx = 0;
+   endy = 45;
+ }else{
+   x = 0;
+   startx = 350;
+   starty = 0;
+   endx = 350;
+   endy = 0;
+ }
 }
