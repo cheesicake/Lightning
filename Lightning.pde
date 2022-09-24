@@ -27,10 +27,19 @@ line(220, 105, 245, 50);
 line(220, 105, 600, 300);
 line(520, 260, 700, 250);
 
+strokeWeight(12);
+line(0, 520, 350, 475);
+line(350, 475, 700, 200);
+
+strokeWeight(9);
+line(0, 350, 350, 700);
+
+line(390, 195, 660, 0);
+
 //neurons
 strokeWeight(0);
 fill(167, 207, 255);
-ellipse(105, 125, 25, 15);
+ellipse(105, 125, 35, 25);
 
 strokeWeight(0);
 fill(167, 207, 255);
